@@ -1,0 +1,126 @@
+@full-width: 100%;
+@container-max-width: 1230px;
+@container-min-width: 952px;
+@main-font: Arial,Helvetica,sans-serif;
+
+body{
+	font-family: @main-font;
+}
+
+//top header begin
+@top-header_black-color: #000000;
+@top-header__link_active_color: #ffffff;
+@top-header__link_light-blue:#b9b9c3;
+@top-header__element_link-font-size: 12px;
+
+.top-header {  
+	width: @full-width;
+	height: auto;
+}
+.top-header_black {  
+    background-color: @top-header_black-color;  
+}
+.top-header__container{
+	max-width: @container-max-width;
+	min-width: @container-min-width;
+	margin: 0 auto;
+	padding: 0 24px;
+
+}
+.top-header__fragment{
+	display: inline-block;
+}
+.top-header__fragment_right{
+	width: 100%;
+	float:right;
+}
+
+.top-header__fragment_left{
+	width: 60%;
+}
+.top-header__right-container{
+	float:right;
+}
+.top-header__element{
+	display: inline-block;
+	margin-right: 18px;
+	padding: 6px 6px 6px 0px;
+}
+.top-header__link{
+	font-size: @top-header__element_link-font-size;
+	text-decoration: none;
+	&:hover {
+    	color: @top-header__link_active_color;
+    }
+}
+.top-header__link_active{
+	font-weight:bold;
+	color: @top-header__link_active_color;
+}
+.top-header__link_light-blue{
+	color: @top-header__link_light-blue;
+}
+.top-header__link_sign-in{
+	text-decoration: underline;
+	text-decoration-style: dotted;
+}
+//top header END
+
+//bottom header begin
+@bottom-header_gray-color: #3a3a43;
+@bottom-header__link_active_color: #fc0;
+@bottom-header__link_active_color-blue: #518eba;
+@bottom-header__link_color: #ffffff;
+@bottom-header__element_link-font-size: 15px;
+
+.bottom-header {  
+	width: @full-width;
+	height: auto;
+}
+.bottom-header_gray {  
+    background-color: @bottom-header_gray-color;
+}
+.bottom-header__container{
+	max-width: @container-max-width;
+	min-width: @container-min-width;
+	margin: 0 auto;
+	padding: 8px 0 0;
+
+}
+.bottom-header__fragment{
+	display: inline-block;
+}
+.bottom-header__link{
+	font-size: @bottom-header__element_link-font-size;
+	text-decoration: none;
+	color: inherit;
+}
+.bottom-header__element{
+	display: inline-block;
+    padding: 9px 3px 17px;
+    margin: 0 9px;
+    color: @bottom-header__link_color;
+    cursor: pointer;
+    &:hover {
+    	color: @bottom-header__link_active_color;
+    	border-bottom: solid 3px @bottom-header__link_active_color;
+    }
+}
+.bottom-header__element_active {
+	color: @bottom-header__link_active_color;
+	font-weight:bold;
+	border-bottom: solid 3px @bottom-header__link_active_color;
+}
+.bottom-header__main-logo{
+	width: 180px;
+	height: auto;
+	vertical-align: middle;
+}
+.bottom-header__absolut-logo{
+	width: auto;
+	height: 15px;
+	vertical-align: middle;
+}
+
+
+//bottom header END
