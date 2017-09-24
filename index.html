@@ -7,7 +7,7 @@
     <meta name="publisher" content="Denis Chmikhalo">
     <meta name="description" content="Тестовое задание">
     <meta name="keywords" content="ТЗ, test">
-    <meta name="viewport" content="width=device-width">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no" />
     <link href="assets/reset.css" rel="stylesheet">
     <link href="assets/styles.css" rel="stylesheet">
     <title>Тестовое задание, Денис Чмыхало</title>
@@ -30,9 +30,9 @@
       </ul>
       <div class="top-header__right-container">
         <ul class="top-header__fragment top-header__fragment_right">
-         <li class="top-header__element"><a class="top-header__link top-header__link_light-blue" href="#">Разместить объявление</a></li>
-         <li class="top-header__element"><a class="top-header__link top-header__link_light-blue" href="#">Зарегистрироваться</a></li>
-         <li class="top-header__element"><a class="top-header__link top-header__link_light-blue top-header__link_sign-in" href="#">Войти</a></li>
+         <li class="top-header__element top-header__element_right"><a class="top-header__link top-header__link_light-blue" href="#">Разместить объявление</a></li>
+         <li class="top-header__element top-header__element_right"><a class="top-header__link top-header__link_light-blue" href="#">Зарегистрироваться</a></li>
+         <li class="top-header__element top-header__element_right"><a class="top-header__link top-header__link_light-blue top-header__link_sign-in" href="#">Войти</a></li>
         </ul>
       </div>
     </div>
@@ -40,16 +40,17 @@
 
 <nav class="bottom-header bottom-header_gray">
     <div class="bottom-header__container">
-      <img class="bottom-header__main-logo" src="images/GED-Logo.svg"/>
+      <a href="#" title="Главная"><img class="bottom-header__main-logo" src="images/GED-Logo.svg"/></a>
+      <a href="#" title="Квартиры"><img class="bottom-header__add" src="images/kvartiri-rek.jpg"/></a>
       <ul class="bottom-header__fragment">
-       <li class="bottom-header__element"><a class="bottom-header__link" href="#">Продажа</a></li>
-       <li class="bottom-header__element"><a class="bottom-header__link" href="#">Аренда</a></li>
-       <li class="bottom-header__element"><a class="bottom-header__link" href="#">Спецпредложения</a></li>
+       <li class="bottom-header__element"><a class="bottom-header__link bottom-header__link_underline" href="#">Продажа</a></li>
+       <li class="bottom-header__element"><a class="bottom-header__link bottom-header__link_underline" href="#">Аренда</a></li>
+       <li class="bottom-header__element bottom-header__element_special-offer"><a class="bottom-header__link" href="#">Спецпредложения</a></li>
        <li class="bottom-header__element bottom-header__element_active"><a class="bottom-header__link" href="#">Новостройки</a></li>
        <li class="bottom-header__element"><a class="bottom-header__link" href="#">Посёлки</a></li>
        <li class="bottom-header__element"><a class="bottom-header__link" href="#">Риэлторы</a></li>
        <li class="bottom-header__element"><a class="bottom-header__link" href="#">Журнал</a></li>
-       <li class="bottom-header__element"><a class="bottom-header__link" href="#"><img class="bottom-header__absolut-logo" src="images/Absolut-Logo.svg"/></a></li>
+       <li class="bottom-header__element bottom-header__element_logo"><a class="bottom-header__link" href="#"><svg class="bottom-header__absolut-logo"></svg></a></li>
       </ul>
     </div>
 </nav>
