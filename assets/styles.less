@@ -546,17 +546,52 @@ margin: 0;
 //sidebar begin
 @content-section__sidebar_width: 250px;
 @content-section__sidebar_bg-color: #ebebed;
+@content-section__sidebar_bg-color-hover: #ffffff;
 
 .content-section__sidebar{
 		display:inline-block;
 		vertical-align: top;
 			width: @content-section__sidebar_width;
 			right:0px;
+				background-color: @content-section__sidebar_bg-color;
+	border-left: solid 1px #cccccc;
 }
 .content-section__sidebar-container{
+padding-top:10px;
 
-	background-color: @content-section__sidebar_bg-color;
-	border-left: solid 1px #cccccc;
+}
+.content-section__sidebar-card{
+	padding:10px 15px 10px 15px;
+	border-bottom: solid 1px #cccccc;
+	img{
+		
+		width:100%;
+		height:auto;
+	}
+		color: @content-section__main-content-font-color;
+	font-size: @content-section__main-advertisement-header-font-size - 9px;
+
+	h4{
+		padding: 15px 0 0 0px;
+		color: inherit;
+		font-weight: 600;
+	}
+		a{
+		text-decoration: none;
+		color: inherit;
+		font-weight: inherit;
+	}
+		p{
+		padding: 10px 0 0 0px;
+		color: inherit;
+		font-weight: 300;
+			font-size: @content-section__main-advertisement-header-font-size - 11px;
+	line-height: @content-section__main-advertisement-header-font-size - 5px;
+	}
+
+	&:hover{
+		background-color: @content-section__sidebar_bg-color-hover;
+	}
 }
 
 //sidebar end
