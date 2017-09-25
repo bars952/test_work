@@ -1,8 +1,8 @@
 @container-max-width: 1230px;
-@container-min-width: 1000px;
+@container-min-width: 950px;
 @main-font: Arial,Helvetica,sans-serif;
 
-body, html{
+body{
 	font-family: @main-font;
 }
 
@@ -118,6 +118,7 @@ body, html{
 #top-header_navigation{
 	width: 100%;
    z-index: 1000;
+   position:fixed
 }
 .top-header_fixed{
 	top:0px;
@@ -216,10 +217,14 @@ body, html{
 
 //content-section begin
 .content-section{
+
 	max-width: @container-max-width;
 	min-width: @container-min-width;
-	padding: 0 24px;
-	margin: 0 auto;
+	padding: 50px 24px;
+	margin: 10px auto;
+}
+.all-content-section{
+
 }
 //main-content begin
 @content-section__main-content-container_min-width: 700px;
@@ -238,6 +243,7 @@ body, html{
 @content-section__other-adv-block-height: 200px;
 
 .content-section__main-content{
+	margin-right: 256px;
 		display:inline-block;
 		vertical-align: top;
 		 	  min-width: @content-section__main-content-container_min-width;
@@ -482,7 +488,7 @@ body, html{
 position:absolute;
 top:10px;
 right:10px;
-z-index:1000;
+z-index:555;
 margin: 0;
 }
 //main-content END
@@ -549,16 +555,23 @@ margin: 0;
 @content-section__sidebar_bg-color-hover: #ffffff;
 
 .content-section__sidebar{
-		display:inline-block;
-		vertical-align: top;
-			width: @content-section__sidebar_width;
-			right:0px;
-				background-color: @content-section__sidebar_bg-color;
-	border-left: solid 1px #cccccc;
+		vertical-align:top;
+		    background: @content-section__sidebar_bg-color;
+		        width: 250px;
+float: left;
+padding-top:20px;
+    min-width: 0;
+    margin-left: -250px;
+    right: 0;
+    position: absolute;
+    z-index: 0;
+    top: 70px;
+
 }
 .content-section__sidebar-container{
 padding-top:10px;
-
+background: @content-section__sidebar_bg-color;
+	border-left: solid 1px #cccccc;
 }
 .content-section__sidebar-card{
 	padding:10px 15px 10px 15px;
