@@ -234,18 +234,21 @@ body, html{
 @content-section__main-advertisement-button-red-color: #ff5f47;
 @content-section__main-advertisement-button-green-color: #62c741;
 @content-section__main-advertisement-button-font-color: #ffffff;
+@content-section__other-adv-timer-days-font-color: #ffffff;
+@content-section__other-adv-block-height: 200px;
 
 .content-section__main-content{
 		display:inline-block;
 		vertical-align: top;
+		 	  min-width: @content-section__main-content-container_min-width;
+	max-width: @content-section__main-content-container_max-width;
+
 }
 .content-section__main-content-container{
 	border: solid 1px #cccccc;
 	margin: 20px 0 0 0;
 	padding: 20px 20px 1px 20px;
- 	  min-width: @content-section__main-content-container_min-width;
-	max-width: @content-section__main-content-container_max-width;
-	width:auto;
+
 
 }
 .content-section__bredcrumbs{
@@ -374,7 +377,171 @@ body, html{
 	float: left;
 	}
 }
+.content-section__other-adv-header{
+		color: @content-section__main-content-font-color;
+	font-size: @content-section__main-advertisement-header-font-size - 9px;
+	line-height: @content-section__main-advertisement-header-font-size + 6px;
+	h3{
+		padding: 20px 0;
+		color: inherit;
+		font-weight: 600;
+	}
+}
+.content-section__other-adv-block{
+	width:100%;
+	height: @content-section__other-adv-block-height;
+	margin-bottom: 20px;
+		&:after {
+            content: "";
+            display: table;
+            clear: both;
+    }
+	
+}
+.content-section__other-adv-image{
+	width:30%;
+	overflow: hidden;
+	height:100%;
+	float:left;
+    position: relative;
+	img{
+		height:100%;
+		width:auto;
+  margin-left: 50%; 
+  transform: translateX(-50%); 
+	}
+}
+.content-section__other-adv-text{
+	width:50%;
+	float:left;
+	color: @content-section__main-content-font-color;
+	font-size: @content-section__main-advertisement-header-font-size - 9px;
+
+	h4{
+		padding: 15px 0 0 20px;
+		color: inherit;
+		font-weight: 600;
+	}
+		a{
+		text-decoration: none;
+		color: inherit;
+		font-weight: inherit;
+	}
+		p{
+		padding: 10px 0 0 20px;
+		color: inherit;
+		font-weight: 300;
+			font-size: @content-section__main-advertisement-header-font-size - 11px;
+	line-height: @content-section__main-advertisement-header-font-size - 5px;
+	}
+}
+.content-section__other-adv-timer{
+		float:right;
+	width:20%;
+
+}
+.content-section__other-adv-timer-container-outer{
+		  display: table;
+
+}
+.content-section__other-adv-timer-container{
+	display:  table-cell;
+		height: 200px;
+		margin:auto;
+		text-align:center;
+		vertical-align:middle;
+		p{
+			
+			font-size: @content-section__main-advertisement-header-font-size - 11px;
+		}
+}
+.content-section__other-adv-timer-days{
+	float:left;
+	background-color: @content-section__main-advertisement-timer-container_hours-section-color;
+	padding: 5px;
+	color: @content-section__other-adv-timer-days-font-color;
+	font-weight: 600;
+	border-radius: 3px;
+}
+.content-section__other-adv-timer-days_left{
+	border-right: solid 1px @content-section__other-adv-timer-days-font-color;
+	border-radius: 3px 0 0 3px;
+}
+.content-section__other-adv-timer-days_right{
+	border-radius: 0 3px 3px 0;
+}
+.content-section__other-adv-timer-days-text-1{
+	text-align:left;
+	padding: 0 0 5px 0px;
+}
+.content-section__other-adv-timer-days-text-2{
+	float:left;
+	padding: 5px 0 0 5px ;
+}
+.content-section__main-advertisement-button-red_on-image{
+position:absolute;
+top:10px;
+right:10px;
+z-index:1000;
+margin: 0;
+}
 //main-content END
+//bottom-content
+.content-section__bottom-conten{
+	margin-top: 70px;
+	padding-bottom: 50px;
+
+}
+.content-section__bottom-conten-row{
+	display:block;
+	position: relative;
+}
+.content-section__bottom-conten-col{
+	width: 32%;
+	float:left;
+}
+.content-section__bottom-conten-card{
+	border: solid 1px #cccccc;
+	overflow: hidden;
+		margin-bottom: 25px;
+	img{
+		width:auto;
+		height:200px;
+  margin-left: 50%; 
+  transform: translateX(-50%); 
+	}
+		color: @content-section__main-content-font-color;
+	font-size: @content-section__main-advertisement-header-font-size - 7px;
+
+	h4{
+		padding: 15px 20px 20px 20px;
+		color: inherit;
+		font-weight: 600;
+	}
+		a{
+		text-decoration: none;
+		color: inherit;
+		font-weight: inherit;
+	}
+	&:hover{
+		 box-shadow: 0 6px 6px 3px rgba(221, 221, 221, 1);
+	}
+}
+.content-section__bottom-conten-card_right-padding{
+	padding-right:2%;
+}
+.content-section__main-advertisement-button-red-on-card{
+	margin-top:0px;
+	margin-left:20px;
+	margin-bottom:20px;
+}
+
+
+
+
+//bottom-content END
+
+
 
 //sidebar begin
 @content-section__sidebar_width: 250px;
@@ -383,9 +550,11 @@ body, html{
 .content-section__sidebar{
 		display:inline-block;
 		vertical-align: top;
+			width: @content-section__sidebar_width;
+			right:0px;
 }
 .content-section__sidebar-container{
-	width: @content-section__sidebar_width;
+
 	background-color: @content-section__sidebar_bg-color;
 	border-left: solid 1px #cccccc;
 }
