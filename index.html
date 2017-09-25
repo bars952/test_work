@@ -10,6 +10,19 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no" />
     <link href="assets/reset.css" rel="stylesheet">
     <link href="assets/styles.css" rel="stylesheet">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+    <script>
+    jQuery(function($) {
+          $(window).scroll(function(){
+              if($(this).scrollTop()>0){
+                $('#top-header_navigation').addClass('top-header_fixed');  
+              }
+              else if ($(this).scrollTop()<28){
+                  $('#top-header_navigation').removeClass('top-header_fixed');
+              }
+          });
+      });
+      </script>
     <title>Тестовое задание, Денис Чмыхало</title>
 
  <!--[if lt IE 9]>
@@ -39,7 +52,7 @@
 </header>
 <!-- TOP Header end-->
 <!-- BOTTOM Header begin-->
-<nav class="bottom-header bottom-header_gray">
+<nav class="bottom-header bottom-header_gray" id="top-header_navigation">
     <div class="bottom-header__container">
       <a href="#" title="Главная"><img class="bottom-header__main-logo" src="images/GED-Logo.svg"/></a>
       <a href="#" title="Квартиры"><img class="bottom-header__add" src="images/kvartiri-rek.jpg"/></a>
@@ -60,6 +73,38 @@
 <div class="content-section">
         <section class="content-section__main-content">
            <div class="content-section__main-content-container">
+            <div class="content-section__bredcrumbs"><a class="content-section__bredcrumbs-link" href="#">Новостройки > Акции и спецпредложения</a>
+            </div>
+            <div class="content-section__main-advertisement">
+              <div class="content-section__main-advertisement-header-block">
+                <div class="content-section__main-advertisement-header-text">
+                  <h2 class="content-section__main-advertisement-header"><a href="#">ВТБ24 предлагает покупателям «Пресня Сити», «Басманный,5» и «Царская площадь» премиальное банковское обслуживание</a>
+                  </h2>
+                </div>
+              <div class="content-section__main-advertisement-timer">
+                <div class="content-section__main-advertisement-timer-container">  <div class="content-section__main-advertisement-timer-container_days">
+                  5 дней
+                  </div>
+                    <div class="content-section__main-advertisement-timer-container_hours">
+                      08 : 34 : 10
+                  </div>
+                </div>
+              </div>
+            </div>
+            <button class="content-section__main-advertisement-button-red">ДО 31 ЯНВАРЯ</button>
+            <div class="content-section__main-advertisement-content">
+              <div class="content-section__main-advertisement-content-image"><img src="images/moscow-863528_1280.jpg"/></div>
+              <div class="content-section__main-advertisement-content-text">
+                <p>Размещение позиционирует институциональный стратегический маркетинг. 
+Такое понимание ситуации восходит к Эл Райс, при этом нестандартный 
+подход категорически экономит комплексный медиабизнес. Ценовая 
+стратегия индуцирует бренд. </p>
+                <div class="content-section__main-advertisement-content-details"><div><p>Узнайте детали акции</p></div>
+                <button class="content-section__main-advertisement-button-green">+7 495 150-XX-XX</button>
+                </div>
+              </div>
+            </div>
+            </div>
            <h3>Заголовок</h3>
             <h3>Заголовок</h3>
              <h3>Заголовокd ddddddd ddddddddddddd ddddddddddddddd dddddddddd ddddddddd</h3>
@@ -74,13 +119,19 @@
                  м
            </div>
         </section>
-<aside class="content-section__sidebar">
+<aside class=" content-section__sidebar">
     <div class="content-section__sidebar-container">
 <h3>Боковая колонка</h3><h3>Боковая колонка</h3><h3>Боковая колонка</h3><h3>Боковая колонка</h3>
 <h3>Боковая колонка</h3>
 <h3>Боковая колонка</h3>
       <h3>Боковая колонка</h3>
-
+<h3>Боковая колонка</h3><h3>Боковая колонка</h3><h3>Боковая колонка</h3><h3>Боковая колонка</h3>
+<h3>Боковая колонка</h3>
+<h3>Боковая колонка</h3>
+      <h3>Боковая колонка</h3><h3>Боковая колонка</h3><h3>Боковая колонка</h3><h3>Боковая колонка</h3><h3>Боковая колонка</h3>
+<h3>Боковая колонка</h3>
+<h3>Боковая колонка</h3>
+      <h3>Боковая колонка</h3>
 </div>
     </aside>
   </div>
